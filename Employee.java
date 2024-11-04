@@ -6,14 +6,16 @@ public class Employee {
     private String dateOfBirth;
     private double salary;
     private String department;
+    private String dateOfJoining;
 
-    public Employee(String firstName, String lastName, String id, String dateOfBirth, double salary, String department) {
+    public Employee(String firstName, String lastName, String id, String dateOfBirth, double salary, String department,String dateOfJoining) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.id = id;
         this.dateOfBirth = dateOfBirth;
         this.salary = salary;
         this.department = department;
+        this.dateOfJoining=dateOfJoining;
     }
 
     public String getFirstName() {
@@ -63,5 +65,14 @@ public class Employee {
 
     public void setDepartment(String department) {
         this.department = department;
+    }
+    
+    public String getDateOfJoining() {
+        return dateOfJoining;
+    }
+
+   
+    public void setDateOfJoining(String dateOfJoining) {
+        this.dateOfJoining = dateOfJoining;
     }
 }

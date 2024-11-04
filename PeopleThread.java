@@ -30,11 +30,17 @@ public class PeopleThread {
 
     public static void main(String[] args) {
        
-        employees.add(new Employee("John", "Doe", "E001", "1990-05-15", 60000, "HR"));
-        employees.add(new Employee("Jane", "Smith", "E002", "1985-08-20", 75000, "IT"));
-        employees.add(new Employee("Alice", "Johnson", "E003", "1992-03-10", 50000, "Finance"));
-        employees.add(new Employee("Bob", "Brown", "E004", "1987-12-05", 70000, "Marketing"));
-         
+    	Employee e1 = new Employee("Neha","Pandey","E003", "1992-09-09", 100, "Sales","2023-06-01");
+      	Employee e2 = new Employee( "Samay","Rana","E004", "1989-12-12", 5000, "IT","2024-03-01");
+      	Employee e3 = new Employee( "Abhijeet","Bhat","E005", "1985-05-25", 10000, "IT","2023-04-01");
+      	Employee e4 = new Employee( "Tanu","Mishra","E006", "1999-01-16", 2000, "Accounts","2022-10-01");
+      	Employee e5 = new Employee( "Yogesh","Patidar","E007", "2001-09-11", 500, "HR","2020-11-01");
+      	employees.add(e1);
+    	employees.add(e2);
+    	employees.add(e3);
+    	employees.add(e4);
+    	employees.add(e5);
+    	  
         for (Employee employee : employees) {
             users.add(employeeToUserMapper.apply(employee));
         }
