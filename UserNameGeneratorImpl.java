@@ -42,7 +42,7 @@ public class UserNameGeneratorImpl {
 
 
         for (Employee employee : employees) {
-            String yearOfBirth = employee.getDateOfBirth().substring(0, 4); // Extract year from dateOfBirth
+            String yearOfBirth = employee.getDateOfBirth().substring(0, 4); 
             String userName = userNameGenerator.generate(employee.getFirstName(), employee.getLastName(), yearOfBirth, employee.getId());
             String password = passwordSupplier.get();
             users.add(new User(employee.getId(), userName, password));

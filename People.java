@@ -60,7 +60,7 @@ public class People {
         
         employees.sort(Comparator.comparing(employee -> {
             LocalDate dateOfBirth = LocalDate.parse(employee.getDateOfBirth(), DateTimeFormatter.ISO_DATE);
-            return dateOfBirth.getMonthValue(); // Get the month as an integer
+            return dateOfBirth.getMonthValue(); 
         }));
 
         for (Employee employee : employees) {
@@ -84,8 +84,8 @@ public class People {
         employees.stream()
         .filter(employee -> employee.getDepartment().equals("IT"))
         .forEach(employee -> {
-            double newSalary = employee.getSalary() * 1.1; // Increment by 10%
-            employee.setSalary(newSalary); // Update the salary
+            double newSalary = employee.getSalary() * 1.1;
+            employee.setSalary(newSalary);
         });
         
         String commaSeparatedFirstNames = employees.stream()
